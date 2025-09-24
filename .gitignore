@@ -34,8 +34,8 @@ ENV/
 *.log
 monitor.log
 
-# Data files
-known_todays_jobs.json
+# Data files (job data is safe to track)
+# known_todays_jobs.json
 
 # Screenshots
 *.png
