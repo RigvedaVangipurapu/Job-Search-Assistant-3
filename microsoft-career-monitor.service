@@ -1,0 +1,17 @@
+[Unit]
+Description=Microsoft Career Hourly Monitor
+After=network.target
+
+[Service]
+Type=simple
+User=rigvedavangipurapu
+WorkingDirectory=/Users/rigvedavangipurapu/Documents/Microsoft Career monitoring
+ExecStart=/usr/bin/python3 /Users/rigvedavangipurapu/Documents/Microsoft Career monitoring/hourly_monitor.py
+Restart=always
+RestartSec=60
+Environment=SENDER_EMAIL=
+Environment=SENDER_PASSWORD=
+Environment=RECIPIENT_EMAILS=
+
+[Install]
+WantedBy=multi-user.target
